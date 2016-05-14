@@ -1,0 +1,22 @@
+body{
+	background-color: #f5d437;
+	font-family: Verdana;
+}
+
+#section{
+	background-color: #FFFFFF;
+	border-radius: 10px;
+	width: 75%;
+	height: 100%;
+	margin-top: -0.5%;
+	margin-left: 12.5%;
+	z-index: 1;
+}
+
+img.smallimg{
+	max-width: 100%;
+	width: 70%;
+	margin-left: 10%;
+	margin-top: 10%;
+	position: fixed;
+}
