@@ -22,7 +22,7 @@ img.smallimg{
 	margin-right: 10%;
 }
 
-a img:hover{
+a img.smallimg:hover{
 	max-width: 80%;
 	width: auto;
 	margin-left: 10%;
@@ -43,8 +43,15 @@ img.headerimg{
 
 .posts{
 	background-color: #f5d437;
+	border-radius: 10px;
 }
 
 .aulas{
-	margin-top: 20%;
+}
+
+#container{
+	content:"";
+	display:table;
+	clear:both;
+	padding:0.01em 16px;
 }
