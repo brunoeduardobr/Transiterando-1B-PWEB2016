@@ -34,3 +34,17 @@ img.headerimg{
 	z-index: 0;
 	margin-left: 25%;
 }
+
+.conteudo{
+	margin-top: 10%;
+	margin-left: 25%;
+	margin-right: 25%;
+}
+
+.posts{
+	background-color: #f5d437;
+}
+
+.aulas{
+	margin-top: 20%;
+}
