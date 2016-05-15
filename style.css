@@ -11,12 +11,26 @@ body{
 	margin-top: -0.5%;
 	margin-left: 12.5%;
 	z-index: 1;
+	box-shadow: -10px -10px 10px #A8A8A8
 }
 
 img.smallimg{
-	max-width: 100%;
-	width: 70%;
+	max-width: 70%;
+	width: auto;
+	margin-top: 20%;
+	margin-left: 20%;
+	margin-right: 10%;
+}
+
+a img:hover{
+	max-width: 80%;
+	width: auto;
 	margin-left: 10%;
-	margin-top: 10%;
-	position: fixed;
+	margin-top:  10%;
+}
+
+img.headerimg{
+	width: 50%;
+	z-index: 0;
+	margin-left: 25%;
 }
