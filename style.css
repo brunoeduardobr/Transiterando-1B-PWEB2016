@@ -46,6 +46,22 @@ img.headerimg{
 	margin-right: 10%;
 }
 
+h4{
+	text-align: center;
+}
+
+img.placas{
+	width: 80%;
+	margin-left: 10%;
+	margin-top: 20%;
+}
+
+img.placas:hover{
+	width: 85%;
+	margin-left: 5%;
+	margin-top: 15%;
+}
+
 .conteudo a{
 	text-decoration: none;
 }
@@ -78,8 +94,6 @@ img.headerimg{
 .posts{
 	background-color: #f5d437;
 	border-radius: 10px;
-	/*max-width: 100%;
-	max-height: 40%;*/
 	height: 40%;
 	width: 100%;	
 	overflow: hidden;
