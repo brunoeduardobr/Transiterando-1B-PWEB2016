@@ -1,0 +1,103 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+		<title>Transiterando</title>
+
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" type="text/css" href="shapes.css">
+		<link rel="stylesheet" type="text/css" href="reset.css">
+		<link rel="stylesheet" type="text/css" href="w3schools.css">
+	</head>
+
+	<body>
+
+
+		<div id="container">
+	
+		
+		<div id="header">
+			<a href="index.html"><img class="headerimg" src="images/banner.png" alt="Banner"></a>
+		</div>
+
+		<div id="section">
+
+		<!-- Botoes de Navegacao-->
+			<div class="w3-row">
+				
+				<div class="w3-col s1">
+					<br>
+				</div>
+
+				<div class="w3-col s2">
+						<a href="index.html"><img class="smallimg" src="images/buttons/inicio.png" alt="Botao Inicio"></a>
+				</div>
+				
+				<div class="w3-col s2">
+					<a href="aulas.html"><img class="smallimg" src="images/buttons/aulas.png" alt="Botao Aulas"></a></a>
+				</div>
+				
+				<div class="w3-col s2">
+					<a href="placas.html"><img class="smallimg" src="images/buttons/placas.png" alt="Botao Placas"></a>
+				</div>
+
+				<div class="w3-col s2">
+					<a href="cadastro.html"><img class="smallimg" src="images/buttons/cadastro.png" alt="Botao Cadastro"></a>	
+				</div>
+				
+				<div class="w3-col s2">
+					<a href="index.html"><img class="smallimg" src="images/buttons/sair.png" alt="Botao Sair"></a>
+				</div>
+
+				<div class="w3-col s1">
+					<a href="upvideo.html">Upload Vídeo</a>	
+				</div>
+			</div>
+		
+		<!-- Conteúdo -->
+			<div class="conteudo">
+	<form action="index.html" method="get" onsubmit="return validaIdade()">
+		Nome: <input type="text" name="nome" placeholder="Ex.: João da Silva" required><br><br>
+		
+		Idade: <input type="number" name="idade" placeholder="Ex.: 19" min="13" max="130">    Sexo: M <input type="radio" name="gender" value="masc" checked>|  F <input type="radio" name="gender" value="fem"><br><br>
+		CPF: <input type="text" name="cpf" placeholder="Ex.: 111.222.333-44" required><br><br>
+		Logradouro: <input type="text" name="logradouro" placeholder="Ex.: Rua Antonio de Morais, 58"><br><br>
+		CEP: <input type="text" name="cep" maxlength="10" placeholder="12345-678" required><br><br>
+		Classe:
+		<select>
+			<option value="A">A</option>
+			<option value="B">B</option>
+			<option value="C">C</option>
+			<option value="AB">AB</option>
+			<option value="AC">AC</option>
+			<option value="ABC">ABC</option>
+		</select><br>
+		<hr size="10" width="50%" align="left" style="color: #000; background-color: #000; border: collapse;">
+		E-Mail: <input type="text" name="email" placeholder="Ex.: exemplo@exemplo.com" required><br><br>
+		Senha: <input type="password" name="senha" minlength="6" maxlength="15" required><br><br>
+		<input type="submit" value="Cadastrar">
+	</form>
+
+	<script type="text/javascript">
+		function validaIdade(){
+ 			var idadeValida = document.getElementById("idade").value;
+ 			alert("entrei");
+ 			if (parseInt(idadeValida) >= 18){
+ 				alert("true");
+ 				return true;
+ 			}
+ 			else{
+ 				alert("false");
+ 				return false;
+ 			}
+ 		}
+	</script>
+	</div>
+		</div>
+		</div>
+
+
+	</div>
+		
+	</body>
+</html>

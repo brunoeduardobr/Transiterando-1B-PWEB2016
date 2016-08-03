@@ -56,18 +56,29 @@
 		
 		<!-- Conteúdo -->
 			<div class="conteudo">
+	<form action="index.html" method="get">
+		Título Aula: <input type="text" name="nome" placeholder="Ex.: Estudo das placas" required><br><br>
+		URL ícone: <input type="text" name="nome" placeholder="Ex.: http://www.com/icone.png" required><br><br>
+		Descrição: <textarea rows="4" cols="30" name="desc" placeholder="Ex.: Essas placas..."></textarea><br><br>
+		Categoria:
+		<select>
+			<option value="Autoestradas">Autoestradas</option>
+			<option value="Cidades">Cidades</option>
+			<option value="Placas">Placas</option>
+		</select><br>
+		<input type="submit" value="Upload">
+	</form>
 
-					<div class="posts">
-						<a href="index.html"><img src="images/posts/01-cruzamento-carros.jpg" alt="	Cruzamento de Carros">
-						<h3 style="text-align: center;">Preferências em Cruzamentos</h3></a>
-					</div>
-					<br><br>
-					<div class="posts">
-						<a href="index.html"><img src="images/posts/02-placas.jpg" alt="Placas">
-						<!--  height="40%" width="100%" -->
-						<h3 style="text-align: center;">Conhecendo as Placas</h3></a>
-					</div>
-			</div>
+	<script type="text/javascript">
+		function mascara(t, mask){
+ 			var i = t.value.length;
+ 			var saida = mask.substring(1,0);
+ 			var texto = mask.substring(i)
+ 			if (texto.substring(0,1) != saida){
+ 			t.value += texto.substring(0,1);
+ 		}
+	</script>
+	</div>
 		</div>
 		</div>
 

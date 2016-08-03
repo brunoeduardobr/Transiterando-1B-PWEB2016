@@ -50,24 +50,35 @@
 				</div>
 
 				<div class="w3-col s1">
-					<a href="upvideo.html">Upload Vídeo</a>	
+					<br>	
 				</div>
 			</div>
 		
 		<!-- Conteúdo -->
 			<div class="conteudo">
+	<form action="index.html" method="get">
+		Título Aula: <input type="text" name="nome" placeholder="Ex.: Estudo das placas" required><br><br>
+		URL ícone: <input type="text" name="nome" placeholder="Ex.: http://www.com/icone.png" required><br><br>
+		Descrição: <input type="textarea" name="desc" placeholder="Ex.: Essas placas..."><br><br>
+		Categoria:
+		<select>
+			<option value="Autoestradas">A</option>
+			<option value="Cidades">B</option>
+			<option value="Placas">C</option>
+		</select><br>
+		<input type="submit" value="Upload">
+	</form>
 
-					<div class="posts">
-						<a href="index.html"><img src="images/posts/01-cruzamento-carros.jpg" alt="	Cruzamento de Carros">
-						<h3 style="text-align: center;">Preferências em Cruzamentos</h3></a>
-					</div>
-					<br><br>
-					<div class="posts">
-						<a href="index.html"><img src="images/posts/02-placas.jpg" alt="Placas">
-						<!--  height="40%" width="100%" -->
-						<h3 style="text-align: center;">Conhecendo as Placas</h3></a>
-					</div>
-			</div>
+	<script type="text/javascript">
+		function mascara(t, mask){
+ 			var i = t.value.length;
+ 			var saida = mask.substring(1,0);
+ 			var texto = mask.substring(i)
+ 			if (texto.substring(0,1) != saida){
+ 			t.value += texto.substring(0,1);
+ 		}
+	</script>
+	</div>
 		</div>
 		</div>
 
