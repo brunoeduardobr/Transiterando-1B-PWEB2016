@@ -56,14 +56,14 @@
 		
 		<!-- Conteúdo -->
 			<div class="conteudo">
-	<form action="index.html" method="get" onsubmit="return validaIdade()">
-		Nome: <input type="text" name="nome" placeholder="Ex.: João da Silva" required><br><br>
-		
-		Idade: <input type="number" name="idade" placeholder="Ex.: 19" min="13" max="130">    Sexo: M <input type="radio" name="gender" value="masc" checked>|  F <input type="radio" name="gender" value="fem"><br><br>
-		CPF: <input type="text" name="cpf" placeholder="Ex.: 111.222.333-44" required><br><br>
+		<form action="index.html" method="get" name="cadastro" onsubmit="return validaIdade();">
+		Nome: <input type="text" name="nome" placeholder="Ex.: João da Silva" required><br><br>		
+		Idade: <input type="number" name="idade" min="10" max="130"><br><br>
+		Sexo: M <input type="radio" name="gender" value="masc" checked>|  F <input type="radio" name="gender" value="fem"><br><br>
+		CPF: <input type="text" name="cpf" placeholder="Ex.: 111.222.333-44" onkeypress="mascara(this, '###.###.###-##')" maxlength="14" required><br><br>
 		Logradouro: <input type="text" name="logradouro" placeholder="Ex.: Rua Antonio de Morais, 58"><br><br>
-		CEP: <input type="text" name="cep" maxlength="10" placeholder="12345-678" required><br><br>
-		Classe:
+		CEP: <input type="text" name="cep" onkeypress="mascara(this, '#####-###')" maxlength="9" placeholder="12345-678" required><br><br>
+		Classe de Desejo:
 		<select>
 			<option value="A">A</option>
 			<option value="B">B</option>
@@ -72,23 +72,31 @@
 			<option value="AC">AC</option>
 			<option value="ABC">ABC</option>
 		</select><br>
+		Já tem CNH: Não<input type="range" name="cnh" min="0" max="1">Sim
 		<hr size="10" width="50%" align="left" style="color: #000; background-color: #000; border: collapse;">
 		E-Mail: <input type="text" name="email" placeholder="Ex.: exemplo@exemplo.com" required><br><br>
 		Senha: <input type="password" name="senha" minlength="6" maxlength="15" required><br><br>
 		<input type="submit" value="Cadastrar">
+		<p style="font-size: 10px;">*Recomendado para maiores de 18 anos</p>
 	</form>
 
 	<script type="text/javascript">
 		function validaIdade(){
- 			var idadeValida = document.getElementById("idade").value;
- 			alert("entrei");
+ 			var idadeValida = document.forms["cadastro"]["idade"].value;
  			if (parseInt(idadeValida) >= 18){
- 				alert("true");
  				return true;
  			}
  			else{
- 				alert("false");
  				return false;
+ 		}
+ 		}
+
+ 		function mascara(t, mask){
+ 			var i = t.value.length;
+ 			var saida = mask.substring(1,0);
+ 			var texto = mask.substring(i)
+ 			if (texto.substring(0,1) != saida){
+ 			t.value += texto.substring(0,1);
  			}
  		}
 	</script>
